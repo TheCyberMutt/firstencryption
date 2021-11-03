@@ -17,9 +17,14 @@ def alphabet_position(text):
 
     numbers = [LETTERS[character] for character in text if character in LETTERS]
 
-    return ' '.join(numbers)
+    return numbers
 
 
-secret_word_as_number = alphabet_position(sample_input)
+input_word_as_number = alphabet_position(sample_input)
 code_word_as_number = alphabet_position(code_word)
+
+print(input_word_as_number)
+print(code_word_as_number)
+
+
 
