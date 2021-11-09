@@ -3,7 +3,9 @@
 The encryption takes a word from the user input and compares it to a word of equal length from a wordlist. The algorithm is designed to have multiple wordlists where each wordlist only has words of equal lengths.
 
 For example:
+
 car -> part of wordlist with ["bar", "jim", "toe"]
+
 rocket -> part of wordlist with ["robots", "doggie", "toejam"]
 
 A random number generator is used to pick word from the wordlist based on placement on list. This number is added to a list that is going to be used to decode the message. 
