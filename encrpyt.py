@@ -38,7 +38,7 @@ def word_generator(user, code):
 
         generated_word.append(val)
 
-    print(generated_word)
+
 
 
 word_generator(input_word_as_number, code_word_as_number)
