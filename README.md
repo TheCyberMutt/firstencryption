@@ -12,12 +12,19 @@ The scrypt here will have a sample list to test the code, but you can use a rand
 After word from wordlist is selected for comparison, the word and user input are broken up into individual characters and converted to numbers that represent their placement in the alphabet.
 
 A -> 1
+
 a -> 1
+
 B -> 2
+
 b -> 2
+
 C -> 3
+
 c -> 3
+
 ...
+
 ...
 
 Next, the algorithm runs a function that either subtracts or adds the numbers that correspond to the same position of the words being compared depending on their sum.
@@ -43,7 +50,7 @@ Leads
 
 Result
 
-[1 + 1, 2 + 24, |3 - 25|, |4 - 26|] -> [2, 26, 22, 22] = ["b", "z", "v", "v"] -> ["bzvv"]
+[ 1 + 1, 2 + 24, |3 - 25|, |4 - 26| ] -> [ 2, 26, 22, 22 ] = [ "b", "z", "v", "v" ] -> [ "bzvv" ]
 
 
 
