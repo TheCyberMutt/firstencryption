@@ -1,5 +1,6 @@
 import random
 from string import ascii_lowercase
+from typing import List, Any
 
 sample_wordlist = ["terces", "twosix", "yofour"]
 length = len(sample_wordlist)
@@ -26,19 +27,27 @@ code_word_as_number = alphabet_position(code_word)
 print(input_word_as_number)
 print(code_word_as_number)
 
-generated_word = []
-
 
 def word_generator(user, code):
+    generated_word = []
     for i in range(1, len(sample_input) + 1):
         if int(user[i - 1]) + int(code[i - 1]) > 26:
             val = abs(int(user[i - 1]) - int(code[i - 1]))
         else:
             val = int(user[i - 1]) + int(code[i - 1])
 
-        generated_word.append(val)
+        generated_word.append(str(val))
+
+    final_word = []
+    for num in generated_word:
+
+        for key, value in LETTERS.items():
+            if num == value:
+                final_word.append(key)
+    final_word = ''.join(final_word)
+
+    return final_word
 
 
-
-
-word_generator(input_word_as_number, code_word_as_number)
+print(LETTERS)
+print(word_generator(input_word_as_number, code_word_as_number))
