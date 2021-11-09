@@ -36,7 +36,7 @@ For example:
 
 Given
 
-wordlist = ["loki", "axyz", "crack", "this", "code"]
+wordlist = ["loki", "axyz", "crak", "this", "code"]
 
 And
 
