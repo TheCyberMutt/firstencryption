@@ -4,12 +4,12 @@ The encryption takes a word from the user input and compares it to a word of equ
 
 For example:
 
-car -> part of wordlist with ["bar", "jim", "toe"]
+car -> compared to words in wordlist with ["bar", "jim", "toe"]
 
-rocket -> part of wordlist with ["robots", "doggie", "toejam"]
+rocket -> compared to words in wordlist with ["robots", "doggie", "toejam"]
 
 A random number generator is used to pick word from the wordlist based on placement on list. This number is added to a list that is going to be used to decode the message. 
-The scrypt here will have a sample list to test the code, but you can use a random string generator on a foor loop to create the list(s). 
+The scrypt here will have a sample list to test the code, but you can use a random string generator on a for loop to create the list(s). 
 
 After word from wordlist is selected for comparison, the word and user input are broken up into individual characters and converted to numbers that represent their placement in the alphabet.
 
