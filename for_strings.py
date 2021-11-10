@@ -138,5 +138,9 @@ def string_encrypt(user_input_wordlist):
 
 
 string_encrypt(user_wordlist)
+
 print(step_list)
 print(encrypted_string)
+
+the_string = ' '.join(encrypted_string)
+print(the_string)
