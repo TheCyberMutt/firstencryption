@@ -41,4 +41,4 @@ wordlistgenerator(100, wordlist13)
 wordlistgenerator(100, wordlist14)
 wordlistgenerator(100, wordlist15)
 
-print(wordlist15)
+# print(wordlist15)
