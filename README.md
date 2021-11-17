@@ -1,6 +1,6 @@
 "# firstencryption" 
 
-The encryption takes a word from the user input and compares it to a word of equal length from a wordlist. The algorithm is designed to have multiple wordlists where each wordlist only has words of equal lengths.
+The encryption takes a word from the user input and compares it to a word of equal length from a wordlist. The algorithm is designed to have multiple wordlists where each wordlist only has words of equal lengths from wordlists.py. 
 
 For example:
 
@@ -53,6 +53,8 @@ Leads
 Result
 
 [ 1 + 1, 2 + 24, |3 - 25|, |4 - 26| ] -> [ 2, 26, 22, 22 ] = [ "b", "z", "v", "v" ] -> [ "bzvv" ]
+
+
 
 
 
