@@ -1,6 +1,7 @@
 import random
 import string
 
+# Number corresponds length of word; each unique length has their own list
 wordlist1 = []
 wordlist2 = []
 wordlist3 = []
@@ -17,14 +18,14 @@ wordlist13 = []
 wordlist14 = []
 wordlist15 = []
 
-
+# Generates list where length represents amount of random words that will be generated from random characters
 def wordlistgenerator(length, wordlist):
     for i in range(0, length):
         wordlist.append(''.join(random.SystemRandom().choice(string.ascii_letters) for _ in range(length)))
 
     return wordlist
 
-
+# For wordlist that will be used
 wordlistgenerator(100, wordlist1)
 wordlistgenerator(100, wordlist2)
 wordlistgenerator(100, wordlist3)

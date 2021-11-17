@@ -5,15 +5,18 @@ import wordlists
 
 user_string = input("Enter your secret message: ")
 
+# Split the string into list of words
 user_wordlist = user_string.split()
 
-print(user_wordlist)
+# print(user_wordlist)
 
+# List of numbers that are used to pick word from wordlist
 step_list = []
 
 encrypted_string = []
 
 
+# Encrypt script is used for each word in user_wordlist and wordlist from wordlists that corresponds to user's word
 def string_encrypt(user_input_wordlist):
     for word in user_input_wordlist:
         if len(word) == 1:
@@ -139,8 +142,8 @@ def string_encrypt(user_input_wordlist):
 
 string_encrypt(user_wordlist)
 
-print(step_list)
-print(encrypted_string)
+# print(step_list)
+# print(encrypted_string)
 
 the_string = ' '.join(encrypted_string)
-print(the_string)
+# print(the_string)
